@@ -242,7 +242,7 @@ P2Game.Woods.prototype = {
 
 	this.game.physics.arcade.overlap(this.player, this.lockedcar, this.opencar, null, this);
 
-	this.insanitybar.position.x = this.player.position.x -10;
+	this.insanitybar.position.x = this.player.position.x -20;
 	this.insanitybar.position.y = this.player.position.y -20;
 
 	this.insanitybar.width = (currentHealth/ maxHealth) * this.insanitybar.width;
@@ -544,7 +544,7 @@ updateShadowTexture: function(){
 
 	this.updateShadowTexture();
 
-	this.insanitybar.position.x = this.player2.position.x -10;
+	this.insanitybar.position.x = this.player2.position.x -20;
 	this.insanitybar.position.y = this.player2.position.y -20;
 	this.insanitybar.width = (currentHealth / maxHealth) * this.insanitybar.width;
 
