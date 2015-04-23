@@ -67,9 +67,10 @@ P2Game.Preload.prototype = {
 
 	},
 
+
 	create: function (){
 
-		this.state.start('HauntedHouse');
+		this.state.start('Intro');
 
 	},
 
@@ -387,7 +388,7 @@ P2Game.HauntedHouse.prototype = {
 	this.insanitybar.scale.set(.2,.2);
 	//this.insanitybar.cropEnabled = true;
 
-	this.player2 = this.game.add.sprite(1000,550,'player');
+	this.player2 = this.game.add.sprite(80,50,'player');
 	this.game.physics.arcade.enable(this.player2);
 	this.player2.animations.add('idle', [0],1,true);
 	this.player2.animations.add('left', [0,1,2,3],4,true);
