@@ -334,7 +334,7 @@ P2Game.HauntedHouse.prototype = {
 	this.bg = game.add.tileSprite(0, 0, 2000, 600, 'housebg');
 	this.bg.mask = this.maskGraphics;
 
-	this.beep-noise = this.game.add.audio('beep-noise');
+	this.beepnoise = this.game.add.audio('beep-noise');
 
 
 	this.map = this.game.add.tilemap('creepytile');
@@ -497,7 +497,7 @@ updateShadowTexture: function(){
 		this.scaryface = this.game.add.sprite(0, 0, 'scaryface'); 
 		this.growface = true;
 		body2.kill()
-		this.beep-noise.play();
+		this.beepnoise.play();
 	},
 
 	screamface: function(){
@@ -528,7 +528,7 @@ updateShadowTexture: function(){
 		this.scaryface2 = this.game.add.sprite(700, 0, 'scaryface'); 
 		this.growface2 = true;
 		body2.kill()
-		this.beep-noise.play();
+		this.beepnoise.play();
 	},
 
 
